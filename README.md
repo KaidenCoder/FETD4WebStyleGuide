@@ -8,6 +8,6 @@ In this project, I have to create a sass project using partials, variables, exte
 
 # Demo
 
- You can watch the live demo here [demo](https://kurosakicoder.github.io/FENDfeedreaderKuro/).
+ You can watch the live demo here [demo](https://kurosakicoder.github.io/FETD4WebStyleGuide/).
 
 
