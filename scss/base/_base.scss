@@ -1,0 +1,31 @@
+/* Universal Selectors */
+* {
+  box-sizing: border-box;
+}
+
+.blockquote {
+  display: block;
+  text-align: left;
+  border-left: 10px solid $secondary-color;
+  padding-left: 25px;
+  border-radius: $br5;
+  font-size: 1.5em;
+  font-style: italic;
+  color: $dark-grey;
+  margin: 2em $m40;
+}
+
+/* Lists */
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  margin-left: 0;
+}
+
+p {
+  display: block;
+  text-align: left;
+}

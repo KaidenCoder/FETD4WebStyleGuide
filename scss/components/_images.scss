@@ -1,0 +1,19 @@
+.img--logo {
+  @extend %logo-img;
+  display: block;
+}
+
+.img--frame {
+  border: 1px solid $another-grey;
+  padding: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  @extend %center-img;
+  max-width: 100%;
+  @extend %clearfix;
+}
+
+.img--avatar {
+  @extend %center-img;
+  padding: 10px;
+}

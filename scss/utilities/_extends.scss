@@ -1,0 +1,52 @@
+/* Center Text */
+%centered {
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+/* Centered Image */
+%center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Image Margins */
+%content-img {
+  margin: 1.5em;
+}
+
+%logo-img {
+  margin: 0 auto;
+}
+/* Buttons */
+%button {
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 50px;
+  color: $white;
+  border: $bnone;
+  font-size: 1.1em;
+  padding: 0.75em;
+  border-radius: $br5;
+  width: 200px;
+  margin: 0 auto;
+  outline: $bnone;
+}
+
+/* Containers */
+%content {
+  width: 75%;
+  padding-left: 75px;
+  padding-right: 75px;
+  margin: auto;
+  max-width: 960px;
+}
+/* Float Clearfix */
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

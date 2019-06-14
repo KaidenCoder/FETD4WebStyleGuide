@@ -1,0 +1,29 @@
+/* Form Styling */
+.form {
+  display: block;
+  margin: 0 auto;
+  outline: $bnone;
+  border: $bnone;
+  width: 400px;
+}
+
+.form__label--hidden {
+  display: $bnone;
+}
+
+.form__input {
+  border-bottom: 5px solid $form-color;
+  border-radius: $br5;
+  border-top: $bnone;
+  border-right: $bnone;
+  border-left: $bnone;
+  margin-bottom: 35px;
+  padding: 15px;
+  outline: $bnone;
+  width: 100%;
+  font-size: 1.15em;
+}
+
+legend {
+  margin-left: -55px;
+}

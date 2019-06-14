@@ -1,0 +1,19 @@
+/* Navigation Styling */
+.nav__item {
+  @extend %centered;
+  width: 100%;
+  margin-bottom: 20px;
+
+  a {
+    color: $stone;
+    font-weight: 300;
+    padding: 10px 20px;
+    border-radius: 0.2em;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $form-color;
+      color: $white;
+    }
+  }
+}

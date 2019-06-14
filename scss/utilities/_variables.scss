@@ -1,0 +1,48 @@
+/* Color Variables */
+$primary-color: #55DEFD; // light blue
+$secondary-color: #59d6c8;
+$form-color: #5BE0C0;
+$text-color: #808080; // grey
+$link-color: #48defe;
+// button colors
+$success: #3CB371; // medium sea green
+$error: #EB8E94; // red
+$warning: #F27D62; // orange
+$info: #8C7EB4; // purple
+// utilty colors
+$white: #FFF;
+$black: #000; //not
+$grey: #7e8d9a;
+$dark-grey: #4c4c4c;
+$another-grey: #c0c0c0;
+// grid theme colors
+$wisteria: #d09cd9; // light wisteria (lavendar)
+$anakiwa: #8EEDFC; // anakiwa (light blue)
+$algae-green: #82DC9E; // light green
+$fountain: #4DA2BB; // steel blue
+$cashmere: #E6A3A1; // blush pink
+$tangerine: #FD9D85; // blush orange
+$riptide: #82E8CE; // light teal
+// navigation colors
+$stone: #797e83; // grey
+/* Font Variables */
+$header-font: 'Open Sans', sans-serif;
+$letter-spacing: 0.0125em;
+$shadow: rgba($dark-grey, .8); //not
+/* Padding and Margins */
+$p10: 10px; // 10px padding
+$m5: 5px; // 5px margin
+$m40: 40px;
+$m20: 20px;
+/* Borders */
+$br5: 5px; // radius 5px
+$bnone: none; // no border
+/* Nav Links */
+$link: $text-color; // grey
+$visit: $text-color; // grey
+$hover: $secondary-color; // teal
+$active: $text-color; // grey
+/* Breakpoints */
+$breakpoint-md: 768px;
+$tablet: 950px;
+$breakpoint-lg: 1024px;

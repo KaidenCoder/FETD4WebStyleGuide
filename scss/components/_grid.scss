@@ -1,0 +1,244 @@
+/* Container and Grid */
+.grid__row {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: $m20;
+  margin-bottom: $m20;
+}
+
+.grid__col--3.theme__colors {
+  border: $bnone;
+  border-radius: $br5;
+  background-color: $wisteria;
+  padding: $p10;
+  margin: $m5;
+  color: $dark-grey;
+}
+
+.grid__col--4.theme__colors {
+  @include flexbox($direction: row, $justify: center, $alignment: center);
+  flex-basis: 100%;
+  border: $bnone;
+  border-radius: $br5;
+  background-color: $anakiwa;
+  padding: $p10;
+  margin: $m5;
+  color: $dark-grey;
+}
+
+.grid__col--4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.grid__col--5.theme__colors {
+  border: $bnone;
+  border-radius: $br5;
+  background-color: $algae-green;
+  padding: $p10;
+  margin: $m5;
+  color: $dark-grey;
+}
+
+.grid__col--6.theme__colors {
+  border: $bnone;
+  border-radius: $br5;
+  background-color: $fountain;
+  padding: $p10;
+  margin: $m5;
+  color: $dark-grey;
+}
+
+.grid__col--7.theme__colors {
+  border: $bnone;
+  border-radius: $br5;
+  background-color: $cashmere;
+  padding: $p10;
+  margin: $m5;
+  color: $dark-grey;
+}
+
+.grid__col--8.theme__colors {
+  border: $bnone;
+  border-radius: $br5;
+  background-color: $tangerine;
+  padding: $p10;
+  margin: $m5;
+  color: $dark-grey;
+}
+
+.grid__col--9 {
+  display: block;
+  width: 100%;
+}
+
+.grid__col--12.theme__colors {
+  border: $bnone;
+  border-radius: $br5;
+  background-color: $riptide;
+  padding: $p10;
+  margin: $m5;
+  color: $dark-grey;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.grid__col--12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 100%;
+}
+/* Media Queries*/
+@media only screen and (min-width: $breakpoint-md) {
+  @include tablet;
+
+  .grid__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .grid__col--12,
+  .grid__col--3,
+  .grid__col--4,
+  .grid__col--5,
+  .grid__col--6,
+  .grid__col--7,
+  .grid__col--8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    flex-basis: 100%;
+  }
+
+  .grid__col--9 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .nav__item {
+    padding: $p10;
+  }
+
+  .img--avatar {
+    margin-right: 50px;
+  }
+
+  .img--logo {
+    float: left;
+  }
+}
+@media only screen and (min-width: $breakpoint-lg) {
+  @include desktop;
+
+  .container {
+    margin: 5px 40px;
+  }
+
+  .card {
+    @include flexbox($direction: column, $justify: flex-start, $alignment: flex-start);
+    margin-top: $m20;
+    margin-bottom: $m20;
+  }
+
+  .grid__col--4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .grid__col--4.theme__colors {
+    flex: 1;
+  }
+
+  .grid__col--5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    flex-basis: 100%;
+  }
+
+  .grid__col--5.theme__colors {
+    flex: 1;
+  }
+
+  .grid__col--7.theme__colors.centered {
+    flex-grow: 0;
+    flex-basis: 50%;
+    width: 50%;
+  }
+
+  .grid__col--7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .grid__col--7.theme__colors {
+    flex: 2;
+  }
+
+  .grid__col--8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid__col--8.theme__colors {
+    flex: 2;
+  }
+
+  .grid__col--9 {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around;
+  }
+
+  .nav__item {
+    padding-right: 20px;
+  }
+
+  .img--logo {
+    float: left;
+  }
+
+  .btn--default.theme__colors,
+  .btn--error.theme__colors,
+  .btn--success.theme__colors,
+  .btn--warning.theme__colors {
+    margin-right: 20px;
+  }
+}
